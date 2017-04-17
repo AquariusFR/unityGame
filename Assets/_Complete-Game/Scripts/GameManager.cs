@@ -66,6 +66,10 @@ namespace Completed
         //This is called each time a scene is loaded.
         static private void OnSceneLoaded(Scene arg0, LoadSceneMode arg1)
         {
+
+			if (instance == null){
+				return;
+			}
             instance.level++;
             instance.InitGame();
         }
